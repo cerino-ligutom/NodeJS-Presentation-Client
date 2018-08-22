@@ -1,0 +1,14 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-basic-title">Edit Post ID #: {{ post.id }}</h4>
+  <button type="button" class="close" aria-label="Close" (click)="dismiss()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="modal-body">
+  <textarea [(ngModel)]="message" class="form-control form-control" placeholder="Nani dafuq u thinking?"></textarea>
+</div>
+
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-primary" (click)="submitPost()">Save</button>
+</div>
